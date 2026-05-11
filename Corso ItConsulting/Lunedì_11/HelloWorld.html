@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <title>Hello World</title>
+</head>
+<body><!--Sezione intestazione-->
+    <div>
+        <h1>Hello World</h1>
+    </div>
+
+    <!-- Questo paragrafo è temporaneamente disattivato
+    <p>Contenuto nascosto</p>
+    -->
+
+    <!--Titoli-->
+        <h1>Titolo principale</h1>
+        <h2>Sottotitolo</h2>
+
+    <!--Paragrafo-->
+        <p>Questo è un paragrafo di testo</p>
+        <p>Questo è un altro paragrafo di testo</p>
+    
+    <!--tag strong-->
+        <p>Questo è un <strong>Testo importante</strong>.</p>
+    
+    <!--tag per testo enfatizzato-->
+        <p>Questo è un <em>testo enfatizzato</em>.</p>
+    
+    <!--collegamento ipertestuale-->
+        <a href="https://www.dungeondice.it/">Vai al sito</a>
+    
+    <!--immagine, per prendere l'immagine dalla cartella devo cliccare
+    con il tasto destro sull'immagine e cliccare su "copia percorso" oppure
+    "copia percorso relativo (per la versione più corta)"-->
+        <img src="C:\Users\media\Desktop\Corso ItConsulting\Lunedì_11\monopoly.jpg" alt="Monopoly">
+   
+    <!--tag video-->
+        <video controls width="320">
+        <source src="video.mp4">
+        </video>
+    
+    <!--tag audio-->
+        <audio controls>
+        <source src="audio.mp3" type="audio/mpeg">
+        </audio>
+    
+    <!--liste ordinate-->
+        <ul>
+            <li>Elemento 1</li>
+            <li>Elemento 2</li>
+        </ul>
+    
+    <!--div contenitore generico di tipo block-level (occupa tutto lo spazio che deve). 
+    Rappgruppa porzioni di contenuto
+    senza attribuire significato semantico specifico.
+    Genera un nuovo blocco nel flusso del layout occupando tutta la larghezza
+    disponibile e andando a capo rispetto agli elementi adiacenti-->
+        <div>
+            <p>Contenuto raggruppato</p>
+        </div>    
+        
+    <!--span contenitore inline per applicare modifiche a porzioni di testo-->    
+        <div>
+            <h2>Testo <span style="color: orange;">inline</span></h2>
+        </div>
+    
+    <!--inline vs block-->
+        <div>
+            <p>Questo è un elemento block</p>
+            <p>Ogni paragrafo va a capo</p>
+            <p>Questo è un <span>elemento inline</span> all'interno del testo che non va a capo</p>
+        </div>
+
+    <!--form-->
+        <form>
+            <input type="text" placeholder="Nome">
+            <input type="password" placeholder="Password">
+            <input type="email" placeholder="Email">
+            <input type="number" placeholder="Numeri">
+            <input type="checkbox">
+            <input type="radio">
+            <button type="submit">Invia</button>
+        </form>
+
+    <!--div con gli attributi più importanti-->
+        <div id="cont" class="box principale" title="Contenitore principale">
+            <p class="testo" data-id="123">Contenuto di esempio</p>
+        </div>
+    
+    <!--id: è un identificatore unico che puo essere richiamato dall'esterno-->
+    
+    <!--label: usato per descrivere un campo di input
+    for: collegamento diretto tra il label e linput specifico tramite l'id
+    questo migliora l'accessibilità e permette di arrivare il campo cliccando sulla label-->
+        <label for="email">Email</label>
+        <input type="email" id="email">
+        <br>
+        <br>
+
+    <!--name: identificatore dei dati
+    Fondamentale nei form. Rappresenta la chiave con cui il dato viene inviato al server
+    può essere condiviso tra più elementi-->
+        <input type="text" name="nome">
+        <input type="text" name="cognome">
+        <input type="radio" name="ruolo" value="studente">
+        <input type="radio" name="ruolo" value="docente">
+
+    <!--placeholder: mostra un testo di esempio all'interno del campo, utile come guida per l'utente
+    Il testo scompare quando l'utente inizia a digitare-->
+        <input type="text" placeholder="Inserisci il tuo nome">
+        <input type="password" placeholder="Inserisci la password">
+        
+    <!--required: campo obbligatorio. Se il campo è vuoro il browser blocca l'invio de segnala errore-->
+        <input type="email" required>
+</body>
+</html>
