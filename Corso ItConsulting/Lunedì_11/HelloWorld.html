@@ -36,7 +36,7 @@
    
     <!--tag video-->
         <video controls width="320">
-        <source src="video.mp4">
+        <source src="video.mp4" type="video/mp4">
         </video>
     
     <!--tag audio-->
@@ -87,11 +87,16 @@
             <p class="testo" data-id="123">Contenuto di esempio</p>
         </div>
     
-    <!--id: è un identificatore unico che puo essere richiamato dall'esterno-->
+    <!-- ATTRIBUTI GLOBALI IMPORTANTI
+     id: definisce un elemento in maniera unica è un identificatore unico che puo essere richiamato dall'esterno
+     e non possono essercene due uguali
+    class: non è unico, può essere ripetuto e usato per identificare un gruppo
+    title-->
     
     <!--label: usato per descrivere un campo di input
-    for: collegamento diretto tra il label e linput specifico tramite l'id
-    questo migliora l'accessibilità e permette di arrivare il campo cliccando sulla label-->
+    for: collegamento diretto tra il label e l'input specifico tramite l'id
+    questo migliora l'accessibilità e permette di arrivare il campo cliccando sulla label.
+    Con label for ti fa legare questo elemento all'elemento che ha l'id email in questo caso-->
         <label for="email">Email</label>
         <input type="email" id="email">
         <br>
@@ -110,7 +115,7 @@
         <input type="text" placeholder="Inserisci il tuo nome">
         <input type="password" placeholder="Inserisci la password">
         
-    <!--required: campo obbligatorio. Se il campo è vuoro il browser blocca l'invio de segnala errore-->
+    <!--required: campo obbligatorio. Se il campo è vuoto il browser blocca l'invio del segnale errore-->
         <input type="email" required>
 </body>
 </html>
