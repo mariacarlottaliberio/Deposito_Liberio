@@ -1,0 +1,50 @@
+/* Per collegare il CSS all'HTML andiamo a scrivere questo: <link rel="stylesheet" href="stile.css>
+nell'head della pagina */
+
+
+/* SELETTORI: identificano gli elementi HTML a cui applicare il css
+nel caso seguente si applica lo stile a tutti i paragrafi 
+E' UN SELETTORE DI TAG (SELETTORE GENERALE DI ELEMENTI)*/
+p {
+    color: blue;
+}
+
+/* SELETTORE DI CLASSE: selezionano elementi che possiedono lo specifico attributo class*/
+.evidenziato {
+    background-color: yellow;
+}
+
+/* SELETTORI ID: selezionano un elemento univoco tramite attributo id 
+applica lo stile all'elemento con Id TitoloImportante*/
+#TitoloImportante {
+    font-size: 24px;
+}
+
+/* COMBINATORI: permettono di selezionare elementi in base alla loro relazione nel DOM 
+selezionano tutti i p che si trovano all'interno di un div
+qui non è necessatio il punto */
+div p {
+    color: green;
+}
+
+
+/* PROPRIETA': definiscono quale aspetto dell'elemento si vuole modificare
+qui font-size controlla la dimensione degli h1.
+Le proprietà sono molteplici
+A volte le proprietà di contraddicono tra loro */
+h1 {
+    font-size: 32px;
+}
+
+/* VALORI: specificano il risultato applicato alla proprietà
+in questo caso il valore assegnato definisce il colore di sfondo del div.
+*/
+div {
+    background-color: lightgray;
+}
+
+/* PSEUDO-CLASSI: selezionano elementi in base ad uno stato o ad una condizione 
+per esempio quando passo il mouse sopra un elemento */
+div:hover {
+    color: red;
+}

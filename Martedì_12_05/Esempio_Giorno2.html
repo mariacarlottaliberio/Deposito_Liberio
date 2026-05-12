@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!--charset="UTF-8": codifica dei caratteri-->
+        <meta charset="UTF-8"> 
+        <!--fornisce una breve descrizione della pagina usata dai motori di ricerca
+        description: rende trovabile e codificabile la pagina-->
+        <meta name="description" content="Esempio di pagina HTML">
+        <!--l’autore del documento-->
+        <meta name="author" content="Nome Autore">
+        <!--viewport: è fondamentale per il responsive design poichè controlla come la pagina viene adattata ai diversi dispositivi. 
+        In particolare su schermi mobili
+        definisce la possibilità che la pagina sia reattiva direttamente 
+        all'interno dei metadati -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Esempi</title>
+    </head>
+    <body>
+        <!-- Select: usato per creare menù a scelta per selezionare una o più
+        opzioni da un elenco predefinito. Agisce come contenitore di elementi
+        Option: ciascuno rappresenta una scelta disponibile 
+        In questo esempio l'utente può scegliere un solo corso dall'elenco-->
+        
+        <label for="corso">Scegli un corso:</label>
+        <select id="corso" name="corso">
+            <option value="html">HTML</option>
+            <option value="css">CSS</option>
+            <option value="js">JavaScript</option>
+        </select>
+
+        <!-- checkbox: usate quando sono consentite le selezioni multiple 
+         CON IL RADIO BUTTON NON SI PUO' FARE-->
+        <p>Seleziona le tecnologie conosciute:</p>
+        <input type="checkbox" id="html" name="tecnologie" value="html">
+        <label for="html">HTML</label>
+        <input type="checkbox" id="css" name="tecnologie" value="css">
+        <label for="css">CSS</label>
+        <input type="checkbox" id="js" name="tecnologie" value="js">
+        <label for="js">JavaScript</label>
+
+        <!-- ACTION: definisce la funzione, la modalità. Dal punto di vista
+         tecnico, quando l'utente preme un pulsante submit, il browser costruisce una richiesta
+         HTTP
+         Ci permettono di fare varie azioni (CRUD) create remove update delete get post put delete patch 
+         GET: richiede o recupera dati dal server. I dati vengono inviati nell'URL
+         POST: invia dati al server (nel backend) per creare o elaborare informazioni.
+         I dati vengono inviati nel body della richiesta. 
+         Se vado a richiedere gli elementi vengono riportati indietro da dove li ho chiamati
+         Se vado ad inviarli vanno a salvarsi nel backend
+         PUT: Aggiorna una risorsa esistente sul server. Modifica completamente. Non 
+         si può tornare alla versione precedente
+         PATCH: Aggiorna parzialmente una risorsa esistente. Non aggiorna tutto ma solo una parte
+         DELETE: Elimina una risorsa dal server
+         
+         HEAD: Richiama le intestazioni (metadati) ma non il contenuto
+         OPTIONS: Richiede al server quali metodi HTTP sono supportati
+         CONNECT: Stabilisce una connessione diretta con il server
+         usata per tunnel HTTPS
+         TRACE: Restituisce al client la richiesta ricevuta dal server per scopi di debug-->
+    
+
+        <h1>ELEMENTI SEMANTICI DELLA PAGINA</h1>
+        <!-- ELEMENTI SEMANTICI DELLA PAGINA 
+         header: parte iniziale della pagina
+         nav: dove scegliamo la navigazione del sito
+         main: informazioni ed elementi della pagina
+         section: una sezione della pagina
+         article: un articolo specifico all'interno della pagina
+         footer: parte finale, sottostante della pagina
+         -->
+        <header>
+            <h1>Sito di esempio</h1>
+        </header>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Contatti</a>
+        </nav>
+
+        <main>
+        <section>
+            <h2>Sezione principale</h2>
+            <p>Contenuto della sezione.</p>
+        </section>
+
+        <article>
+            <h2>Articolo</h2>
+            <p>Testo di un contenuto indipendente.</p>
+        </article>
+        </main>
+
+        <footer>
+            <p>Copyright 2026</p>
+        </footer>
+
+        <h1>TABELLA</h1>
+        <!-- TABELLA -->
+         <!-- TAG TABLE PER STRUTTURA GENERALE -->
+        <table> 
+        <!-- thead: contiene l'intestazione con celle th -->
+            <thead> <!--intestazione-->
+                <tr> <!--riga-->
+                    <th>Nome</th> <!--cella-->
+                    <th>Età</th>
+                    <th>Ruolo</th>
+                </tr>
+            </thead>
+        <!-- tbody: racchiude dati effettivi nelle celle td organizzare per righe tramite tr -->
+            <tbody>
+                <tr> <!--riga-->
+                    <td>Mario</td> <!--cella-->
+                    <td>25</td>
+                    <td>Studente</td>
+                </tr>
+                <tr> <!--riga-->
+                    <td>Laura</td> <!--cella-->
+                    <td>30</td>
+                    <td>Docente</td>
+                </tr>
+            </tbody>
+        </table>
+    </body>
+</html>

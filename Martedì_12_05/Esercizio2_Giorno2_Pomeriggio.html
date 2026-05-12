@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Esercizio di pagina HTML">
+    <title>Gestione evento tecnologico</title>
+</head>
+<body>
+    <!-- HEADER -->
+    <header>
+        <h1>Evento tecnologico</h1>
+    </header>
+
+    <!-- NAV -->
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Contatti</a>
+        <a href="#">Registrati</a>
+    </nav>
+    <br>
+    <!-- MAIN -->
+    <main>
+        <!-- DIV IMMAGINE E VIDEO -->
+        <div>
+            <img src="technology.jpg" alt="tecnologia">
+
+            <!--VIDEO -->
+            <video controls width="320">
+                <source src="video.mp4">
+            </video>
+        </div>
+
+        <!-- ARTICLE -->
+        <article>
+            <h2>A cosa serve questo evento?</h2>
+            <p>Ad entrare nel mondo dei videogiochi e scoprire le sue peculiarità</p>
+            <a href="https://create.clust-er.it/evento/dal-3-al-5-settembre-2025-game-on-2025-il-futuro-del-gaming-tra-ai-simulazione-e-nuove-tecnologie/">Clicca qui per andare alla pagina dell'evento</a>
+        </article>
+
+        <!-- TABELLA -->
+        <p>Qui di seguito puoi trovare tutto il programma dell'evento</p>
+        <table> 
+            <thead>
+                <tr> 
+                    <th>Ora</th> 
+                    <th>Luogo</th>
+                    <th>Tipo di evento</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr> 
+                    <td>10:30</td> 
+                    <td>Padiglione Videogames</td>
+                    <td>Discussione sull'utilizzo del 3D nei videogiochi</td>
+                </tr>
+                <tr> 
+                    <td>11:30</td> 
+                    <td>Palco</td>
+                    <td>Come fare un PNG</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <!-- SEZIONE -->
+        <section>
+            <h2>Inserisci i dati nel form per registrarti all'evento:</h2>
+            <p><em>Ricorda di inserire <span style="color: red"><strong>TUTTI</strong></span> i dati corretti</em></p>
+        </section>
+
+        <!-- FORM -->
+        <div>
+            <form action="#" method="post">
+                <label for="nome">Nome</label><br>
+                <input type="text" id="nome" name="nome" placeholder="Inserisci Nome" required><br>
+                <label for="cognome">Cognome</label><br>
+                <input type="text" id="cognome" name="cognome"placeholder="Inserisci Cognome" required><br>
+                <label for="email">Email</label><br>
+                <input type="email" id="email" name="email" placeholder="Email" required><br>
+                <label for="password">Password</label><br>
+                <input type="password" id="pass" name="pass" placeholder="*********" required><br>
+                <br>
+                
+                <!-- SCELTA RADIO BUTTON -->
+                <p>Quale evento ti interessa di più <em>scegli solo un'opzione</em>:</p>
+                <input type="radio" id="evento1" name="evento">
+                <label for="evento1">Discussione sull'utilizzo del 3D nei videogiochi</label><br>
+                <input type="radio" id="evento2" name="evento">
+                <label for="evento2">Come fare un PNG</label><br>
+                
+                <!-- CHECKBOX -->
+                <p>A quale evento vorresti partecipare? <em>Se vuoi partecipare ad entrambi ti basterà selezionarli</em></p>
+                <input type="checkbox" id="evento1" required>
+                <label for="evento1">Discussione sull'utilizzo del 3D nei videogiochi</label><br>
+                <input type="checkbox" id="evento2">
+                <label for="evento2">Come fare un PNG</label>
+                
+                <!-- MENU SELEZIONE -->
+                <p>Quali argomenti vorresti vedere nei prossimi eventi?</p>
+                <select name="eventi" id="eventi">
+                    <option>AI</option>
+                    <option>Sviluppo storie dei videogiochi</option>
+                    <option>Come creare una mappa in un videogioco</option>
+                </select>
+            </form>
+            <br>
+            <!-- TEXTAREA -->
+            <label for="suggerimenti">Lasciaci qualche suggerimento riguardo l'evento:</label>
+            <br>
+            <textarea name="suggerimenti" id="suggerimenti">
+                Inserisci testo
+            </textarea>
+            <br>
+
+            <!-- BUTTON -->
+            <button type="submit">Invia</button>
+
+    </main>
+
+        <!-- FOOTER -->
+        <footer>
+            <p>Copyright 2026</p>
+        </footer>
+    
+</body>
+</html>

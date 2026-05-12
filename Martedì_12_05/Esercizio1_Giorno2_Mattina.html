@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>HTML Esercitazione</title>
+    </head>
+    <body>
+        <!-- INTESTAZIONE -->
+        <div>
+            <h1>Form registrazione</h1>
+            <h2>Giochi da tavolo</h2>
+        </div>
+        
+        <!-- PARAGRAFO -->
+        <div>
+            <p>Form di registrazione per rimanere <strong>sempre</strong> aggiornato sulle <span style="color:crimson"><strong>nuove uscite</strong></span> dei giochi da tavolo</p>
+        </div>
+        
+        <!-- FORM -->
+        <div>
+            <form>
+                <label for="nome">Nome</label><br>
+                <input type="text" id="nome" name="nome" placeholder="Inserisci Nome" required><br>
+                <label for="cognome">Cognome</label><br>
+                <input type="text" id="cognome" name="cognome"placeholder="Inserisci Cognome" required><br>
+                <label for="email">Email</label><br>
+                <input type="email" id="email" name="email" placeholder="Email" required><br>
+                <label for="telefono">Numero di telefono</label><br>
+                <input type="number" id="numero" name="telefono" placeholder="Inserisci numero di telefono" required><br>
+                <br>
+                
+                <!-- SCELTA RADIO BUTTON -->
+                <p>Preferisci i <em>giochi di ruolo</em> o i <em>party games</em>?</p>
+                <input type="radio" id="gdr" name="giochi">
+                <label for="gdr">Giochi di ruolo</label><br>
+                <input type="radio" id="party" name="giochi">
+                <label for="party">Party Games</label><br>
+                
+                <!-- CHECKBOX -->
+                <p>Se ti piacciono entrambi clicca <strong>queste opzioni:</strong></p>
+                <input type="checkbox" id="giochidiruolo">
+                <label for="giochidiruolo">Giochi di ruolo</label><br>
+                <input type="checkbox" id="partygames">
+                <label for="partygames">Party Games</label>
+                
+                <!-- SELEZIONE MENU -->
+                <p>Scegli il gioco da tavolo che preferisci tra questi:</p>
+                <select name="gdt" id="gdt">
+                    <option>Monopoly</option>
+                    <option>7Wonders</option>
+                    <option>Risiko</option>
+                    <option>Taboo</option>
+                </select>
+            </form>
+            <br>
+            
+            <!-- BOTTONE INVIO -->
+            <button type="submit">Invia</button>
+        </div>
+    </body>
+</html>
