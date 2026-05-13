@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+        <meta name="description" content="EsempioGiorno3">
+        <meta name="author" content="Nome Autore">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="Esempio_Giorno3.css">
+    </head>
+    <body>
+        <!-- l'ultima regola ha la priorità -->
+        <p>Ciao</p>
+
+        <!-- Il colore sarà sempre rosso perchè è più importante il generico 
+        che abbiamo scritto sopra-->
+        <div>
+            <p>Testo prova</p>
+        </div>
+
+        <!-- prevarrà la regola dell'ID -->
+        <p id="titolo" class="testo">Esempio</p>
+
+
+        <!-- Paragrafo di esempio per colori e tipografia 
+        al div abbiamo dato determinate caratteristiche 
+        che vengono ereditate dall'h1 e dal p.
+        Quindi avremo le caratteristiche del div + quelle che abbiamo
+        dato ad h1 e a p -->
+        <div class="box">
+            <h1>Titolo principale</h1>
+            <p>Paragrafo di esempio per colori e tipografia</p>
+        </div>
+
+        <!-- Esempio misure -->
+        <div class="misura">Esempio Misure</div>
+
+
+        <!-- prova padding: inserimento 20px di padding tra contenuto e bordo -->
+        <div class="provaPadding">Prova padding</div>
+
+
+        <!-- prova border: inserimento di un bordo nero di 5px al div -->
+        <div class="ProvaBorder">Prova Border</div>
+
+        <!-- prova margin:  definisce spazio esterno tra l'elemento e gli altri elementi circostanti-->
+        <div class="ProvaMargin">Prova Margin</div>
+
+    </body>
+</html>

@@ -1,0 +1,114 @@
+/* SCALA DI PRIORITA' 
+
+1. ID / !important
+2. CLASSE
+3. GENERICO
+4. EREDITARIETA'
+*/
+
+
+/* Cascata: entrambe le regole hanno la stessa specificità
+quindi viene applicata quelle DICHIARATA PER ULTIMA
+
+QUINDI IL COLORE DEL P SARA' ROSSO */
+
+p {
+    color: blue;
+}
+
+p {
+    color: red;
+}
+
+/* Ereditarietà: <p> eredita il colore dal <div> 
+Il testo sarà verde anche senza una regola diretta sul paragrafo*/
+
+div {
+    color: green;
+}
+
+/* Specificità: Anche se tutte le regole si applicano al paragrafo
+prevale #titolo perchè il selettore ID ha maggiore specificità
+QUINDI IL TESTO SARA' ROSSO
+
+.testo {
+    color: orange;
+}
+
+#titolo {
+    color: red;
+} */
+
+/* Se mettiamo delle regole che non vanno in contrasto vengono applicate tutte */
+.testo {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#titolo {
+    font-weight: bolder;
+}
+
+/* css di esempio per colori e tipografia.
+nel body diamo uno sfondo alla pagina intera e un tipo di scrittura
+poi andiamo a dare uno sfondo al div (box) che va a distinguersi da quello del body */
+body {
+    background-color: aqua;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.box {
+    background-color: white;
+    padding: 20px;
+}
+
+/* h1 e p andranno ad ereditare le caratteristiche 
+che abbiamo già dato al div e andranno ad aggiungere 
+le caratteristiche specifiche che abbiamo dato */
+h1 {
+    color: darkblue;
+    font-size: 2rem;
+    line-height: 1.2;
+}
+
+p {
+    color: rgb(71, 55, 217);
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+
+/* esempio misure. In questo caso il div misure avrà una larghezza
+di 200px e un'altezza di 100px che definiscono direttamente la 
+dimensione del contenuto */
+.misura {
+    width: 200px;
+    height: 100px;
+    background-color: lightblue;
+}
+
+
+/* prova padding
+aggiunge lo spazio tra il contenuto e il bordo
+Qui vengono aggiunti 20px su tutti i lati aumentando
+lo spazio interno senza modificare direttamente il contenuto */
+.provaPadding {
+    padding: 20px;
+    background-color: lightgreen;
+}
+
+
+/* prova Border: è il contorno dell'elemento
+In questo esempio viene applicato un bordo solido nero
+di 5px che racchiude content e padding */
+.ProvaBorder {
+    border: 5px solid black;
+}
+
+
+/* prova Margine: il margine definisce lo spazio esterno
+tra l'elemento e gli altri elementi circostanti
+Vengono aggiunti 3 px su tutti i lati separando il div
+dagli altri elementi nel layout*/
+.ProvaMargin {
+    margin: 30px;
+}

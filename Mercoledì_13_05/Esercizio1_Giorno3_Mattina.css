@@ -1,0 +1,47 @@
+body {
+    background-color: rgb(181, 91, 255);
+    padding: 10px;
+}
+
+/* id (identificatore) per div */
+#Box {
+    background-color: aqua;
+    width: 50%;
+    height: 80%;
+    border: 2px dotted blue;
+    margin: 5px;
+    padding: 8em;
+    content: 10px;
+}
+
+/* imposto un general per il titolo */
+h1 {
+    color: blue;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+/* titolo modificato usando la classe regola specifica */
+.Title {
+    color: yellow;
+    font-weight: bold;
+}
+
+/* paragrafo */
+p {
+    color: blueviolet;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 5px;
+}
+
+/* classe bottone */
+.Button {
+    color: rgb(253, 0, 0);
+    border-color: blue;
+}
+
+/* classe bottone con modifica a passaggio mouse */
+.Button:hover {
+    color: blue;
+    border-color: red;
+}
+
