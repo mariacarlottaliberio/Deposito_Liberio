@@ -1,0 +1,64 @@
+/* Grid principale in cui imposto una griglia di 3 righe */
+.containerGrid {
+    display: grid;
+    grid-template-rows: 3;
+}
+
+/* header che occupa tutta la parte superiore */
+.header {
+    background-color: blueviolet;
+    grid-row: 1;
+}
+
+/* div contenitore in cui ho messo sidebar e container flex
+occupa la seconda riga con una griglia di due colonne
+con uno spazio del 10% tra i due elementi*/
+.contenutoCentrale {
+    grid-row: 2;
+    display: grid;
+    grid-template-columns: 30% 60%;
+    gap: 10%;
+}
+
+/* sidebar */
+.sidebar {
+    background-color: brown;
+}
+
+/* div alto 200px 
+che contiene 4 elementi distribuiti con flex
+hanno uno spazio tra loro 
+i loro elementi sono allineati al centro
+padding per allontanare gli elementi dal bordo
+*/
+.containerFlex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 200px;
+    padding: 10px;
+    background-color: lightsalmon;
+}
+
+/* footer che occupa la terza riga del grid principale */
+.footer {
+    background-color: chartreuse;
+    grid-row: 3;
+}
+
+/* container con determinate dimensioni 
+in posizione relative
+contiene il bottone in posizione relative */
+.containerButton {
+    position: relative;
+    width: 100px;
+    height: 50px;
+}
+
+/* bottone in posizione absolute
+posizionato con top e left */
+.button {
+    position: absolute;
+    top: 20px;
+    left: 60px;
+}

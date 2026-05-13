@@ -1,0 +1,180 @@
+/* div in posizione relativa 
+diventa il riferimento per gli elementi figli
+posizionati in modo assoluto 
+relative prende le distanze sull'interezza della pagina*/
+.contenitore {
+    position: relative;
+    width: 300px;
+    height: 200px;
+    background-color: lightgray;
+}
+
+/* div in posizione assoluta 
+viene rimosso dal flusso e posizionato (a seconda
+del valore che si da alla proprietà) in una determinata posizione
+si muove in base all'elemento relative in cui è contenuto*/
+.box {
+    position: absolute;
+    top: 20px;
+    left: 30px;
+    width: 100px;
+    height: 50px;
+    background-color: coral;
+}
+/* per centrarlo possiamo scrivere in questo modo 
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+puoi andare fino al 50% e poi aggiustarti dall'altra parte */
+
+
+/* GRIGLIA BASE CON COLONNE E GAP */
+/* esempio con display: grid con 3 colonne tra di esse un gap di 10px */
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+}
+
+/* Alle colonne del grid andiamo a: 
+dare il colore allo sfondo
+il colore bianco al testo, 
+uno spazio tra l'elemento 
+il bordo e allineamo il testo al centro
+ */
+.item1 {
+    background-color: steelblue;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    border: 10px solid black;
+}
+
+.item2 {
+    background-color: steelblue;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    border: 10px solid black;
+}
+
+.item3 {
+    background-color: steelblue;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    border: 10px solid black;
+}
+
+
+/* ESEMPIO FLEX */
+/* inseriamo display flex nel container principale
+con justify content andiamo a distribuire gli elementi lungo
+l'asse principale creando spazio tra di essi */
+.containerFlex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 200px;
+    background-color: lightgray;
+}
+
+/* diamo altezza e larghezza ai div interni
+diamo un colore allo sfondo e alla scritta
+e inseriamo anche in ogni singolo div il display flex pe centrare il contenuto all'interno  */
+.itemFlex1 {
+    width: 50px;
+    height: 50px;
+    background-color: steelblue;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.itemFlex2 {
+    width: 50px;
+    height: 50px;
+    background-color: steelblue;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.itemFlex3 {
+    width: 50px;
+    height: 50px;
+    background-color: steelblue;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* GRID CON COLONNE E RIGHE */
+/* La griglie è composta da 3 colonne e 3 righe */
+.containerGridcr {
+    display: grid;
+    grid-template-columns: 100px 100px 100px;
+    grid-template-rows: 100px 100px 100px;
+    gap: 10px;
+}
+
+/* itemGrid1 occupa due colonne (da linea 1 a 3) nella prima riga */
+.itemGrid1 {
+    grid-column: 1 / 3;
+    grid-row: 1;
+    background-color: brown;
+}
+
+/* itemGrid2 occupa due righe nella terza colonna */
+.itemGrid2 {
+    grid-column: 3;
+    grid-row: 1 / 3;
+    background-color: aqua;
+}
+/* questo mostra come sia possibile controllare manualmente la posizione e l'estensione degli elementi */
+
+/* grid-template-area definisce una struttura logica leggibile
+header: occupa tutta la prima riga
+sidebar e content: condividono la seconda
+footer: occupa tutta la terza
+Molto utile per layout complessi e migliora leggibilità
+e manutentibilità del codice*/
+.containerArea {
+    display: grid;
+    grid-template-areas: 
+    /* qui sotto vado a scrivere dove mettere gli elementi */
+        "header header"
+        "sidebar content"
+        "footer footer";
+    grid-template-columns: 1fr 2fr;
+    gap: 10px;
+}
+
+/* header occupa tutta la prima riga */
+.header {
+    grid-area: header;
+    background-color: aqua;
+}
+
+/* occupa la seconda riga insieme al content */
+.sidebar {
+    grid-area: sidebar;
+    background-color: brown;
+}
+
+/* occupa la seconda riga insieme alla sidebar */
+.content {
+    grid-area: content;
+    background-color: blue;
+}
+
+/* occupa tutta l'ultima riga */
+.footer {
+    grid-area: footer;
+    background-color: chartreuse;
+}
