@@ -1,0 +1,101 @@
+/*  definisco variabili globali 
+che posso assegnate ad altri elementi*/
+:root {
+    --background-color: lightgreen;
+    --background-color2: lightgray;
+}
+
+body {
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: var(--background-color2);
+}
+
+/* imposto un container grid con 5 righe
+che vanno a dividere la pagina in 5 sezioni */
+.containerPrincipale {
+    display: grid;
+    grid-template-rows: 5;
+}
+
+/* parte superiore della pagina
+occupa la prima riga della pagina
+vado ad allineare il testo al centro */
+.headerH1 {
+    grid: 1;
+    background-color: var(--background-color);
+    text-align: center;
+}
+
+/* metto uno pseudo elemento prima e dopo
+il il titolo  */
+.headerH1::before {
+    content: "🍦";
+}
+
+.headerH1::after {
+    content: "🍦";
+}
+
+/* barra di navigazione 
+occupa la seconda riga della pagina */
+.navbar {
+    grid: 2;
+    background-color: var(--background-color);
+    text-align: right;
+}
+
+/* div occupa la terza riga */
+.containerSezPrincipale {
+    grid: 3;
+    text-align: center;
+}
+
+/* con un div ho impostato una card
+a cui ho dato una posizione relativa per posizionarsi
+al centro
+bordo doppio con animazione di cambio colore */
+.card {
+    position: relative;
+    left: 43%;
+    width: 200px;
+    height: 350px;
+    border: 4px double lightblue;
+    animation: cambioColore 2s infinite;
+}
+
+/* animazione per la card */
+@keyframes cambioColore {
+    0% {
+    border-color: lightgreen;
+    }
+
+    50% {
+    border-color: lightblue;
+    }
+
+    100% {
+    border-color: lightgreen;
+    }
+}
+
+.button {
+    background-color: var(--background-color);
+}
+
+/* bottone che cambia colore una volta che si passa
+il mouse sopra */
+.button:hover {
+    background-color: var(--background-color2);
+}
+
+/* textarea per le recensioni che occupa la 4 riga */
+.constainerRecensioni {
+    grid: 4;
+    text-align: center;
+}
+
+.footer{
+    grid: 5;
+    background-color: var(--background-color);
+    text-align: center;
+}
