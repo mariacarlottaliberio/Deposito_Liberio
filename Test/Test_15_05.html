@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Test</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="Test_15_05.css">
+    </head>
+    <body>
+        <!-- HEADER -->
+        <header class="header">
+            <h1>DaisyFlowers</h1>
+        <!-- NAVBAR NELL'HEADER -->
+            <nav>
+                <a href="#">Home</a>
+                <!-- per i contatti ho creato un collegamento con 
+                 il paragrafo che si trova nel footer per far si che 
+                 al click del mouse possa portare direttamente
+                 al footer -->
+                <a href="#contatti">Contatti</a>
+            </nav>
+        </header>
+            <p class="catalogo">Il nostro catalogo:</p>
+        <!-- CONTAINER PER CARDS -->
+        <div class="container">
+        
+        <!-- CARD 1 -->
+            <div class="card1">
+                <p>Girasoli</p>
+                <img class="girasoli" src="girasoli.jpg" alt="girasoli">
+            
+            </div>
+
+        <!-- CARD 2 -->
+            <div class="card2">
+                <p>Margherite</p>
+                <img class="margherite" src="margherite.jpg" alt="margherite">
+            </div>
+
+        <!-- CARD 3 -->
+            <div class="card3">
+                <p>Orchidee</p>
+                <img class="orchidee" src="orchideee.jpg" alt="orchidee">
+            </div>
+
+        <!-- CARD 4 -->    
+            <div class="card4">
+                <p>Rose</p>
+                <img class="rose" src="rose.jpg" alt="rose">
+            </div>
+
+        <!-- CARD 5 -->
+            <div class="card5">
+                <p>Tulipani</p>
+                <img class="tulipani" src="tulipani.jpg" alt="tulipani">
+            </div>
+
+        <!-- CARD 6 -->
+            <div class="card6">
+                <p>Papaveri</p>
+                <img class="papaveri" src="papaveri.jpg" alt="papaveri">
+            </div>
+        </div>
+
+        <!-- FORM PER ESSERE RICONTATTATI -->
+        <div class="form">
+            <p>Se ci hai contattato ma non abbiamo risposto lasciaci i tuoi recapiti e ti ricontatteremo!</p>
+            <br>
+            <form action="#" method="post">
+                <label for="nome">Nome</label>
+                <br>
+                <input type="text" name="nome" id="nome">
+                <br>
+                <label for="cognome">Cognome</label>
+                <br>
+                <input type="text" name="cognome" id="cognome">
+                <br>
+                <label for="numero">Numero di telefono</label>
+                <br>
+                <input type="number" name="telefono" id="telefono">
+                <br>
+                <label for="fasciaOraria">In quale fascia oraria preferisci essere ricontattato/a?</label>
+                <br>
+                <input type="radio" name="orario"> Mattina
+                <input type="radio" name="orario"> Pomeriggio
+            </form>
+        </div>
+        <br>
+        <footer>
+            <p id="contatti">
+                Numero di telefono: 1235467890
+                Mail: daisyflowers@gmail.com
+            </p>
+        </footer>
+    <!-- TO DO: sono arrivato all'80% ma mi manca da 
+    fare questa cosa -->
+    </body>
+</html>

@@ -1,0 +1,191 @@
+:root {
+    --background-color: lightsalmon;
+    --font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    --background-color2: rgba(237, 237, 30, 0.978);
+    --color: rgb(179, 32, 32);
+}
+
+/* ho impostato uno sfondo all'intera pagina web
+con il valore cover per coprire tutto il contenitore
+e no repeat per non farla ripetere
+*/
+body {
+    background-image: url('sfondo_fiori.jpg');
+    background-size: cover;
+    background-repeat: no repeat;
+}
+
+/* header con il nome del fioraio e i contatti */
+.header {
+    background-color: var(--background-color);
+    text-align: center;
+    font-family: var(--font-family);
+    font-style: italic;
+    font-size: larger;
+}
+
+/* flex-wrap: wrap per far sistemare le card
+una sotto l'altra quando si va a ridurre la dimensione
+della pagina 
+justify content per distribuire gli elementi sull'asse principale*/
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+
+.catalogo {
+    font-family: var(--font-family);
+    text-align: center;
+}
+
+p {
+    text-align: center;
+}
+
+.card1 {
+    height: 400px;
+    width: 300px;
+    font-family: var(--font-family);
+    border: solid 2px var(--color);
+    border-radius: 5px;
+    transition: transform 0.5s;
+    justify-content: center;
+}
+
+/* per far ingrandire le card */
+.card1:hover {
+    transform: scale(1.2);
+}
+
+.girasoli {
+    /* position: absolute; */
+    padding-left: 50px;
+    width: 200px;
+    height: 200px;
+    left: 60px;
+}
+
+.card2 {
+    height: 400px;
+    width: 300px;
+    justify-content: center;
+    font-family: var(--font-family);
+    border: solid 2px var(--color);
+    border-radius: 5px;
+    transition: transform 0.5s;
+}
+
+.card2:hover {
+    transform: scale(1.2);
+}
+
+.margherite {
+    /* position: absolute; */
+    width: 200px;
+    height: 200px;
+    left: 60px;
+}
+
+.card3 {
+    height: 400px;
+    width: 300px;
+    justify-content: center;
+    font-family: var(--font-family);
+    border: solid 2px var(--color);
+    border-radius: 5px;
+    transition: transform 0.5s;
+}
+
+.card3:hover {
+    transform: scale(1.2);
+}
+
+.orchidee {
+    /* position: absolute; */
+    width: 200px;
+    height: 200px;
+    left: 60px;
+}
+
+.card4 {
+    height: 400px;
+    width: 300px;
+    justify-content: center;
+    font-family: var(--font-family);
+    border: solid 2px var(--color);
+    border-radius: 5px;
+    transition: transform 0.5s;
+}
+
+.card4:hover {
+    transform: scale(1.2);
+}
+
+.rose {
+    /* position: absolute; */
+    width: 200px;
+    height: 200px;
+    left: 60px;
+}
+
+.card5 {
+    height: 400px;
+    width: 300px;
+    justify-content: center;
+    font-family: var(--font-family);
+    border: solid 2px var(--color);
+    border-radius: 5px;
+    transition: transform 0.5s;
+}
+
+.card5:hover {
+    transform: scale(1.2);
+}
+
+.tulipani {
+    /* position: absolute; */
+    width: 200px;
+    height: 200px;
+    left: 60px;
+}
+
+.card6 {
+    height: 400px;
+    width: 300px;
+    justify-content: center;
+    font-family: var(--font-family);
+    border: solid 2px var(--color);
+    border-radius: 5px;
+    transition: transform 0.5s;
+}
+
+.card6:hover {
+    transform: scale(1.2);
+}
+
+.papaveri {
+    /* position: absolute; */
+    width: 200px;
+    height: 200px;
+    left: 60px;
+}
+
+.form {
+    background-color: var(--background-color2);
+    font-family: var(--font-family);
+    text-align: center;
+    width: 300px;
+    height: 350px;
+    border-radius: 20px;
+}
+
+#contatti {
+    background-color: var(--background-color);
+    font-family: var(--font-family);
+    font-weight: 600;
+    margin: 0px;
+}

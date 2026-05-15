@@ -1,0 +1,5 @@
+Sito di un fiorario in cui abbiamo 
+- parte superiore con nome del fioraio e barra di navigazione con home e contatti
+- parte centrale in cui troviamo il catalogo con le card (ogni card il tipo di fiore con immagine
+- form per essere ricontattati in caso di mancata risposta
+- parte inferiore con numero di telefono e mail

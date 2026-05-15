@@ -1,0 +1,4 @@
+TO DO:
+- Migliorare l'aspetto dell'header (per esempio inserendo pseudo elementi e logo fioraio) ed eliminare lo spazio tra l'header e la parte superiore della pagina (anche per il footer)
+- Finire le card (sistemare immagini, inserire i prezzi dei fiori)
+- Curare meglio i colori
